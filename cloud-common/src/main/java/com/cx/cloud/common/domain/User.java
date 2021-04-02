@@ -1,9 +1,10 @@
-package com.cx.cloud.userservice.domain;
+package com.cx.cloud.common.domain;
 
 /**
  * @author Cao Xin
  * @since 2021/4/1
  */
+
 public class User {
 
     private Long id;
@@ -41,5 +42,14 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 }

@@ -6,7 +6,7 @@ package com.cx.cloud.userservice.api;
  */
 
 import com.cx.cloud.common.domain.CommonResult;
-import com.cx.cloud.userservice.domain.User;
+import com.cx.cloud.common.domain.User;
 import com.cx.cloud.userservice.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -43,7 +43,7 @@ public class UserController {
     @GetMapping("/getUserByIds")
     public CommonResult<List<User>> getUserByIds(@RequestParam List<Long> ids) {
         List<User> userList= userService.getUserByIds(ids);
-        LOGGER.info("根据ids获取用户信息，用户列表为：{}",userList);
+        LOGGER.info("根据ids获取用户信息，用户列表为：{}",userList.toString());
         return new CommonResult<>(userList);
     }
 

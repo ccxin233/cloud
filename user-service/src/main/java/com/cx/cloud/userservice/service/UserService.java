@@ -1,6 +1,6 @@
 package com.cx.cloud.userservice.service;
 
-import com.cx.cloud.userservice.domain.User;
+import com.cx.cloud.common.domain.User;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
